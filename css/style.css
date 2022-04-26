@@ -10,7 +10,7 @@
 }
 
 body {
-    background-color: #687E8C;
+    background-color: #0D0D0D;
 }
 
 .navegacion {
@@ -35,36 +35,198 @@ img {
 }
 
 /*Main*/
-.bienvenida{
-    text-align: center;
-    font-family: 'Nunito', sans-serif;
-}
-.titP{
-    font-size: 2.5rem;
-    margin-bottom: 15px;
-}
-.parrafoB{
-    width: 25%;
-    margin: auto;
-    border-bottom: 1px solid #0D0D0D;
+.welcome__main__container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-.redesS{
-    background-color: #0D0D0D;
-    padding: 50px 50px;
-}
-.iconosR{
+.welcome__container {
+    padding: 4%;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-evenly;
+    width: 100%;
+    height: auto;
+    background-color: white;
+    align-items: center;
 }
+
+.welcome__img__container {
+    display: flex;
+    width: 100%;
+    height: 80vh;
+    background-size: cover;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+}
+
+figure {
+    position: relative;
+    height: auto;
+    width: 100%;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 15px 25px rgba(0, 0, 0, .5);
+}
+
+img {
+    width: 100%;
+    height: 100%;
+
+}
+
+.main_menu{
+    background-color: #0D0D0D;
+    padding: 100px 100px;
+    margin-bottom: 15px;
+}
+
 /*Footer*/
-.footer {
-    background-color: #F2778D;
-    padding: 20px 20px;
+footer {
+    width: 100%;
+    height: auto;
+    background: white;
+    color: #0D0D0D;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer__main__container {
+    display: grid;
+    width: 90%;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr;
+    column-gap: 25px;
+}
+
+/* Contact Data */
+.footer__contact__container {
+    display: flex;
+    flex-flow: column;
+    justify-content: space-evenly;
+    flex-direction: column;
+    align-content: stretch;
+    align-items: center;
+}
+
+.logo-footer {
+    width: 200px;
+}
+
+.contact__data {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+}
+
+.footer__contact__container h2 {
+    color: var(--blue);
+}
+
+.contact__data a,
+p {
+    text-decoration: none;
+    padding-left: 15px;
+    color: var(--blue);
+}
+
+/* MAPA */
+.footer__map__container {
+    margin: auto;
+}
+
+/* Social Media */
+.footer__social_media__container {
+    display: flex;
+    flex-direction: column;
+}
+
+.social__media__data {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    margin: 1vh 0;
+}
+
+.social__media__data a {
+    text-decoration: none;
+    color: #0D0D0D;
+    font-size: 20px;
+    font-weight: 400;
+}
+
+#social__link {
+    color: #222;
+    width: 40px;
+    height: 40px;
+    margin-right: 2vh;
+    padding: 0.5rem;
+    color: var(--white);
+    background: var(--red);
+    border-radius: 50px;
 }
 
 .copy {
+    display: flex;
+    width: 100%;
     text-align: center;
-    font-size: 1rem;
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Montserrat';
+    justify-content: center;
+    font-size: 12px;
+    font-weight: 300;
+    padding: 7px 0 7px 0;
+    background: #0D0D0D;
+    color: #fff;
+}
+
+@media screen and (max-width: 768px) {
+
+    .logo-footer,
+    .footer__map__container,
+    .social__media__data a {
+        display: none;
+    }
+
+    footer {
+        display: flex;
+        width: 100%;
+        height: auto;
+        justify-content: space-around;
+    }
+
+    .footer__main__container {
+        display: flex;
+        flex-flow: column;
+        align-items: center;
+        justify-content: center;
+        height: auto;
+    }
+
+    .footer__contact_data {
+        display: flex;
+        flex-flow: column wrap;
+        justify-content: center;
+        align-content: center;
+        margin-top: 2vh;
+    }
+
+    .footer__contact_data h2 {
+        text-align: center;
+    }
+
+    .contact__data {
+        display: flex;
+        justify-content: center;
+    }
+
+    .footer__social_media__container {
+        display: flex;
+        flex-flow: row;
+    }
+
+    .social__media__data img {
+        width: 5vh;
+    }
 }
