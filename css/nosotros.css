@@ -1,0 +1,146 @@
+/*Fonts*/
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital@1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital@1&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+}
+
+body{
+    background-color: #DAD7D5;
+}
+
+/*Header*/
+
+header{
+    background-color: #0D0D0D;
+    display: flex;
+    height: 70px;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    /*position: fixed;*/
+    width: 100%;
+}
+
+a{
+    text-decoration: none;
+    color: #fff;
+}
+
+.logo_header{
+    display: flex;
+    align-items: center;
+}
+
+.ico_header{
+    height: 50px;
+    margin-right: 10px;
+}
+
+.nav_menu a{
+    font-weight: 600;
+    padding: 10px;
+    font-family: 'Roboto', sans-serif;
+}
+
+.nav_menu a:hover{
+    color: #F16D00;
+}
+
+/*Main*/
+
+.tittle_us{
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    margin-bottom: 50px;
+}
+
+.tittle_section{
+    font-size: 3.5rem;   
+}
+
+.section_preguntas{
+    margin: 15px 15px;
+    text-align: center;
+}
+
+h3{
+    background-color: #0D0D0D;
+    color: #ffffff;
+    width: 50%;
+    border-radius: 50px;
+    margin: auto;
+    padding: 8px;
+    font-family: 'Nunito';
+}
+
+p{
+    margin-top: 10px;
+    font-size: 1.3rem;
+    font-family: 'Nunito';
+}
+
+
+
+
+/*Footer*/
+footer{
+    width: 100%;
+    /*position: absolute;*/
+    bottom: 0;
+    left: 0;
+    padding: 2rem 0;
+    background-color: #0e0e0e;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.logo-footer{
+    height: 80px;
+    margin-bottom: 1rem;
+}
+
+.redes-sociales, .menu-footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.icono-red{
+    height: 50px;
+    width: 50px;
+    border-radius: 50px;
+    border: 1px solid #f2f2f2;
+    background-image: url(../redes/FacebookBlanco.png);
+    background-position: center;
+    background-size: 40%;
+    background-repeat: no-repeat;
+    margin:1rem;
+}
+
+.icono-red:hover{
+    background-color: #121212;
+    filter: invert(1);
+}
+
+.icono-red:nth-of-type(2){
+    background-image: url(../redes/InstagramBlanco.png);
+}
+.icono-red:nth-of-type(3){
+    background-image: url(../redes/TwitterBlanco.png);
+}
+
+
+
+
+.copyright{
+    color: #f2f2f2;
+    text-align: center;
+}
