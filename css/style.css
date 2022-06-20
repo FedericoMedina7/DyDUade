@@ -1,186 +1,360 @@
-/*Fonts*/
-@import url('https://fonts.googleapis.com/css2?family=Roboto:ital@1&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Nunito:ital@1&display=swap');
 
 * {
     margin: 0;
     padding: 0;
-    list-style: none;
+    box-sizing: border-box;
+    font-family: 'Nunito', sans-serif;
     text-decoration: none;
+    list-style: none;
 }
-
 
 /*Header*/
 
 header{
-    background-color: #000000;
     display: flex;
-    height: 70px;
+    min-height: 70px;
     justify-content: space-between;
     align-items: center;
-    padding: 10px;
-    position: fixed;
-    width: 100%;
+    background: #1F1F1F;
+    padding: 15px;
 }
 
-a{
-    text-decoration: none;
-    color: #fff;
-}
-
-.logo_header{
-    display: flex;
-    align-items: center;
-}
-
-.ico_header{
+.logo img{
     height: 50px;
-    margin-right: 10px;
 }
 
-.nav_menu a{
-    font-weight: 600;
-    padding: 10px;
-    font-family: 'Roboto', sans-serif;
+.nav-menu a{
+    color: #fff;
+    padding-right: 20px;
 }
 
-.nav_menu a:hover{
-    color: #F16D00;
+.nav-menu a:hover{
+    color: #FFDBE3;
+    transition: 1s;
+}
+
+@media (max-width: 700px){
+    header{
+        flex-direction: column;
+    }
+    .nav-menu{
+        padding: 10px 0px;
+    }
 }
 
 /*Main*/
 
-.contenedor{
+/*Bienvenida*/
+.secBienvenida {
+    margin-top: 50px;
+}
+
+.coverMain {
+    display: flex;
+    justify-content: center;
+    margin-top: 60px;
+    padding: 30px;
+
+}
+
+.textBienv {
+    width: 50%;
     text-align: center;
 }
 
-.fondo_sect{
-    width: 100%;
-}
-.centrado{
-    font-family: 'Roboto', sans-serif;
-    font-size: 3rem;
-    color: #ffffff;
-    position: absolute;
-    top: 50%;
-    left: 35%;
-    transform: translate(-50%, -50%);
-}
-.fondo_section, .present_img {
-    width: 100%;
-    height: 100%;
+.textBienv h1,
+h2 {
+    font-size: 2.5rem;
 }
 
-.welcome__main__container {
+.textBienv p {
+    font-size: 1.2rem;
+    margin-top: 40px;
+}
+
+.mediaCover {
+    width: 50%;
+}
+
+.mediaCover img {
+    width: 90%;
+}
+
+.bannerContainer {
+    height: 250px;
     display: flex;
-    justify-content: center;
     align-items: center;
-}
-
-.welcome_paragraph{
-    font-size: 1.1rem;
-    font-family: 'Roboto', sans-serif;
-}
-.welcome__container {
-    padding: 4%;
-    display: flex;
     justify-content: space-evenly;
-    width: 100%;
-    height: auto;
-    background-color: #ffffff;
-    align-items: center;
+    background: #121214;
+    position: relative;
+
 }
 
-.welcome__img__container {
-    display: flex;
-    width: 100%;
-    height: 80vh;
-    background-size: cover;
-    justify-content: center;
-    align-items: center;
-    height: auto;
+.banner img {
+    color: #fff;
+    width: 50%;
 }
 
-figure {
-    height: auto;
-    width: 100%;
-    overflow: hidden;
-    border-radius: 10px;
-    box-shadow: 0 15px 25px rgba(0, 0, 0, .5);
+.banner p {
+    color: white;
+    width: 90%;
+    font-size: 1.5rem;
 }
 
-.fondo_division{
-    background-image: url(../fotos/foto5.webp);
-    width: 100%;
-    height: 25rem;
-    background-position: center bottom;
-	background-size: cover;
+@media (max-width: 700px) {
+
+    .textBienv {
+        width: 100%;
+    }
+
+    .textBienv h1,
+    h2 {
+        font-size: 1.6rem;
+    }
+
+    .textBienv p {
+        font-size: .9rem;
+    }
+
+    .bannerContainer {
+        padding-left: 30px;
+
+    }
+
+    .banner img {
+        margin-left: 10px;
+        width: 30%;
+    }
+
+    .banner p {
+        font-size: .9rem;
+    }
+
 }
 
-.mas_info{
+/*Fin Bienvenida*/
+
+.presentacionPlatos {
     text-align: center;
-    margin: 40px 40px;
-    background-color: #ffffff;
-    font-size: 1.3rem;
-    font-family: 'Nunito', sans-serif;
-    
+    font-size: 2.3rem;
+    margin: 15px 15px;
+
 }
 
-
-
-
-/*Footer*/
-footer{
-    width: 100%;
-    /*position: absolute;*/
-    bottom: 0;
-    left: 0;
-    padding: 2rem 0;
-    background-color: #000000;
+/*Cards*/
+.mejoresPlatos {
     display: flex;
-    justify-content: center;
     align-items: center;
-    flex-direction: column;
-}
-
-.logo-footer{
-    height: 80px;
-    margin-bottom: 1rem;
-}
-
-.redes-sociales, .menu-footer{
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    justify-content: space-evenly;
     flex-wrap: wrap;
 }
 
-.icono-red{
-    height: 50px;
-    width: 50px;
-    border-radius: 50px;
-    border: 1px solid #ffffff;
-    background-image: url(../redes/FacebookBlanco.png);
-    background-position: center;
-    background-size: 40%;
-    background-repeat: no-repeat;
-    margin:1rem;
-}
-
-.icono-red:hover{
-    background-color: #121212;
-    filter: invert(1);
-}
-
-.icono-red:nth-of-type(2){
-    background-image: url(../redes/InstagramBlanco.png);
-}
-.icono-red:nth-of-type(3){
-    background-image: url(../redes/TwitterBlanco.png);
-}
-
-.copyright{
-    color: #ffffff;
-    font-family: 'Roboto', sans-serif;
+.card {
+    background: #E8EDFF;
+    width: 220px;
+    height: 400px;
+    margin: 10px;
+    border-radius: 15px;
     text-align: center;
+}
+
+.cardImg {
+    height: 170px;
+    margin-bottom: 15px;
+    background-size: cover;
+    border-radius: 15px 15px 0 0;
+}
+
+.cardImg h3 p {
+    text-align: center;
+}
+
+.car1 {
+    background-image: url(/comidas/tofu.jpg);
+}
+
+.car2 {
+    background-image: url(/comidas/ramen.jpg);
+}
+
+.car3 {
+    background-image: url(/comidas/dumplings.jpg);
+}
+
+.card a {
+    background-color: #FFDBE3;
+    color: #121214;
+    padding: 15px 20px;
+    display: block;
+    text-decoration: none;
+    margin: 20px 50px;
+    border-radius: 10px;
+}
+
+/*Fin cards*/
+
+/*Galeria*/
+
+.galeria {
+    background: #121214;
+    text-align: center;
+    color: #fff;
+    font-size: 3rem;
+    padding: 20px;
+    margin-top: 1.5rem;
+}
+
+
+
+.galleryContainer {
+    display: grid;
+    padding: 2% 0;
+    max-width: 100%;
+    width: 100%;
+    height: 150vh;
+    gap: 10px;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+}
+
+.gridPicture {
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    filter: grayscale(.8);
+    transition: all .4s ease;
+}
+
+.gridPicture:hover {
+    filter: grayscale(0);
+    z-index: 500;
+
+}
+
+.picture-1 {
+    width: 100%;
+    background-image: url(/fotos/foto7.png);
+    grid-column: 1/2;
+    grid-row: 1/3;
+}
+
+.picture-2 {
+    background-image: url(/fotos/foto10.jpg);
+    grid-column: 2/4;
+    grid-row: 1/2;
+}
+
+.picture-3 {
+    background-image: url(/fotos/foto8.jpg);
+    grid-column: 2/3;
+    grid-row: 2/3;
+}
+
+.picture-4 {
+    background-image: url(/fotos/foto5.webp);
+    grid-column: 3/4;
+    grid-row: 2/3;
+}
+
+.picture-5 {
+    background-image: url(/fotos/foto4.jpg);
+    grid-column: 1/2;
+    grid-row: 3/4;
+}
+
+.picture-6 {
+    background-image: url(/fotos/foto6.png);
+    grid-column: 2/4;
+    grid-row: 3/4;
+}
+
+@media (max-width: 1024px) {
+    .galleryContainer {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(6, 1fr);
+        width: 100%;
+        height: 200vh;
+        row-gap: .5vh;
+    }
+
+    .gridPicture {
+        background-size: cover;
+        background-position: center center;
+        background-repeat: no-repeat;
+        filter: none;
+    }
+
+    .picture-1 {
+        grid-row: 1/2;
+        grid-column: 1/2;
+    }
+
+    .picture-2 {
+        grid-row: 2/3;
+        grid-column: 1/2;
+    }
+
+    .picture-3 {
+        grid-row: 3/4;
+        grid-column: 1/2;
+    }
+
+    .picture-4 {
+        grid-row: 4/5;
+        grid-column: 1/2;
+    }
+
+    .picture-5 {
+        grid-row: 5/6;
+        grid-column: 1/2;
+    }
+
+    .picture-6 {
+        grid-row: 6/7;
+        grid-column: 1/2;
+    }
+}
+
+/*Footer*/
+footer {
+    background-color: #E8EDFF !important;
+    display: block;
+    padding: 150px;
+    height: 100px;
+    text-align: center;
+}
+
+.redesFooter a {
+    margin-top: 20px;
+    padding: 10px;
+}
+
+.navFooter {
+    margin: 15px;
+}
+
+.navFooter a {
+    text-decoration: none;
+    color: #1F1F1F;
+    font-size: 1.1rem;
+    padding: 15px;
+}
+
+@media (max-width: 700px) {
+    footer {
+        width: 100%;
+        padding: 10px;
+        height: 200px;
+    }
+
+    .redesFooter,
+    .navFooter,
+    .copyR {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
 }

@@ -5,87 +5,122 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" href="fotos/icono.ico">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="icon" href="icono/icono1.png">
     <link rel="stylesheet" href="css/style.css">
     <title>Koi</title>
 </head>
 
 <body>
     <header>
-        <a href="index.html" class="logo_header">
-            <img src="/fotos/icono1.png" alt="icoheader" class="ico_header">
-        </a>
-        <nav class="nav_menu">
-            <a href="index.html">Inicio</a>
-            <a href="nosotros.html">Nosotros</a>
-            <a href="menu.html">Menu</a>
-            <a href="contact.html">Contacto</a>
+        <div class="logo">
+            <a href="index.html"><img src="icono/icono1.png" alt="icokoi"></a>
+        </div>
+        <nav class="nav-menu">
+            <a href="index.html" class="navItem">Inicio</a>
+            <a href="nosotros.html" class="navItem">Nosotros</a>
+            <a href="menu.html" class="navItem">Menu</a>
+            <a href="contacto.html" class="navItem">Contacto</a>
         </nav>
     </header>
 
-    <main>
-        <div class="contenedor">
-            <img src="fondos/fondo3.png" alt="fondo_sect" class="fondo_sect">
-            <div class="centrado">Bienvenidos a Koi! <br>No te vas a querer ir nunca...</div>
-        </div>
 
-        <section class="welcome__main__container">
-            <div class="welcome__container ">
-                <div class="welcome__text__container">
-                    <p class="welcome_paragraph">
-                        En Koi reinventamos la comida japonesa, homenajeando a esta cultura. Esta
-                        casa de comida se fundo en 2005. Reformulamos recetas original, desarrollando sushis modernos,
-                        llenos de
-                        sabor, de estilo casero, usando los mejores ingredientes frescos y naturales!
-                    </p>
-                    <p class="welcome_paragraph">
+    <main>
+        <section class="secBienvenida">
+            <div class="coverMain">
+                <div class="textBienv">
+                    <h1>¡Bienvenidos a Koi!</h1>
+                    <h2>No te vas a querer ir nunca...</h2>
+                    <p>En Koi reinventamos la comida japonesa, homenajeando a esta cultura. Esta casa de comida se fundo
+                        en 2005. Reformulamos recetas original, desarrollando sushis modernos, llenos de sabor, de
+                        estilo casero, usando los mejores ingredientes frescos y naturales!
                         Tenemos una propuesta innovadora que prometen al visitante una experiencia gastronómica única,
-                        garantizando
-                        la calidad y la originalidad de nuestros productos.
+                        garantizando la calidad y la originalidad de nuestros productos.
                     </p>
                 </div>
-
-                <div class="container-fluid welcome__img__container">
-                    <figure>
-                        <img src="fotos/foto6.png"
-                            alt="comida6" class="present_img">
-                    </figure>
+                <div class="mediaCover">
+                    <img src="icono/icokoi.jpg" alt="icomain">
                 </div>
             </div>
         </section>
 
-        <section class="fondo_division">
-            
+        <div class="bannerContainer">
+            <div class="banner">
+                <img src="icono/cliente.svg" alt="">
+                <p>Clientes satisfechos</p>
+            </div>
+            <div class="banner">
+                <img src="icono/tiempo.svg" alt="">
+                <p>17 años en el mercado</p>
+            </div>
+            <div class="banner">
+                <img src="icono/comida.svg" alt="">
+                <p>Variedad de platos</p>
+            </div>
+        </div>
+
+        <div class="presentacionPlatos">
+            <h2>Nuestros mejores platos:</h2>
+        </div>
+
+        <section>
+            <div class="mejoresPlatos">
+                <div class="card">
+                    <div class="cardImg car1"></div>
+                    <h3>Tofu</h3>
+                    <p>Porción de tofu marinado - apanado en panko, maní y almendras - salsa KOI.</p>
+                    <a href="menu.html">Ir al menu</a>
+                </div>
+                <div class="card">
+                    <div class="cardImg car2"></div>
+                    <h3>Ramen</h3>
+                    <p>Caldo espeso de cerdo - panceta ahumada - memna - pickle - negui - huevo mollet - aceite de ajo
+                        negro
+                        ahumado</p>
+                    <a href="menu.html">Ir al menu</a>
+                </div>
+                <div class="card">
+                    <div class="cardImg car3"></div>
+                    <h3>Dumplings</h3>
+                    <p>Bondiola - akusay - ajo - jengibre - aceite de sésamo tostado</p>
+                    <a href="menu.html">Ir al menu</a>
+                </div>
+            </div>
         </section>
 
-        <section class="mas_info">
-            <h2 class="tittle_info">En nuestro menu de navegación podras encontrar todo lo que necesitas!</h2>
-            <div class="parraf_info">
-                <p>Desde una sección para saber más de nosotros,</p>
-                <p>Nuestro menu para que puedas elegir los mejores platos</p>
-                <p>Y una sección de contacto por si tenes consultas!!</p>
+        <section class="galeria">
+            <h3>Galeria</h3>
+
+            <div class="galleryContainer">
+                <div class="picture-1 gridPicture"></div>
+                <div class="picture-2 gridPicture"></div>
+                <div class="picture-3 gridPicture"></div>
+                <div class="picture-4 gridPicture"></div>
+                <div class="picture-5 gridPicture"></div>
+                <div class="picture-6 gridPicture"></div>
             </div>
         </section>
     </main>
 
     <footer>
-        <img src="fotos/icono1.png" alt="mate" class="logo-footer">
-        <div class="redes-sociales">
-            <a href="" class="icono-red"></a>
-            <a href="" class="icono-red"></a>
-            <a href="" class="icono-red"></a>
+
+        <div class="redesFooter">
+            <a href="https://instagram.com" target="_blank"><img src="redes/bxl-instagram 1.svg" alt="ig"></a>
+            <a href="https://web.whatsapp.com/" target="_blank"><img src="redes/bxl-whatsapp 1.svg" alt="linkedin"></a>
+            <a href="https://github.com/FedericoMedina7" target="_blank"><img src="redes/bxl-github 1.svg"
+                    alt="github"></a>
+            <a href="https://goo.gl/maps/fBqw9m2RHTo1WDkt6" target="_blank"><img src="redes/bx-map 1.svg" alt="map"></a>
         </div>
-        <span class="copyright">&copy;2022, Koi!, todos los derechos reservados.</span>
+
+        <div class="navFooter">
+            <a href="index.html">Inicio</a>
+            <a href="nosotros.html">Nosotros</a>
+            <a href="menu.html">Menu</a>
+            <a href="contacto.html">Contacto</a>
+        </div>
+        <div class="copyR">
+            © 2022 Copyright | Federico Medina
+        </div>
     </footer>
-    <script src="https://use.fontawesome.com/releases/v5.15.4/js/all.js" data-auto-a11y="true"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"
-        integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB"
-        crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"
-        integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13"
-        crossorigin="anonymous"></script>
 </body>
 
 </html>

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="icono/icono1.png">
+    <link rel="stylesheet" href="css/contacto.css">
+    <title>Koi</title>
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <a href="index.html"><img src="icono/icono1.png" alt="icokoi"></a>
+        </div>
+        <nav class="nav-menu">
+            <a href="index.html" class="navItem">Inicio</a>
+            <a href="nosotros.html" class="navItem">Nosotros</a>
+            <a href="menu.html" class="navItem">Menu</a>
+            <a href="contacto.html" class="navItem">Contacto</a>
+        </nav>
+    </header>
+    <main>
+        <form class="form" id="form">
+            <h2 class="form__title">Envianos tu consulta</h2>
+
+            <div class="form__container">
+                <div class="form__group">
+                    <input type="text" id="name" class="form__input" placeholder=" " required>
+                    <label for="name" class="form__label">Nombre:</label>
+                    <span class="form__line"></span>
+                </div>
+                <div class="form__group">
+                    <input type="text" id="apellido" class="form__input" placeholder=" " required>
+                    <label for="apellido" class="form__label">Apellido:</label>
+                    <span class="form__line"></span>
+                </div>
+                <div class="form__group">
+                    <input type="text" id="email" class="form__input" placeholder=" " required>
+                    <label for="mail" class="form__label">Email:</label>
+                    <span class="form__line"></span>
+                </div>
+                <div class="form__group">
+                    <input type="text" id="texto" class="form__input" placeholder=" " required>
+                    <label for="texto" class="form__label">Escriba su mensaje:</label>
+                    <span class="form__line"></span>
+                </div>
+
+                <button type="submit" class="form__submit">Enviar</button>
+                <p class="warnings" id="warnings"></p>
+            </div>
+        </form>
+
+    </main>
+
+    <footer>
+
+        <div class="redesFooter">
+            <a href="https://instagram.com" target="_blank"><img src="redes/bxl-instagram 1.svg" alt="ig"></a>
+            <a href="https://web.whatsapp.com/" target="_blank"><img src="redes/bxl-whatsapp 1.svg" alt="linkedin"></a>
+            <a href="https://github.com/FedericoMedina7" target="_blank"><img src="redes/bxl-github 1.svg"
+                    alt="github"></a>
+            <a href="https://goo.gl/maps/fBqw9m2RHTo1WDkt6" target="_blank"><img src="redes/bx-map 1.svg" alt="map"></a>
+        </div>
+
+        <div class="navFooter">
+            <a href="index.html">Inicio</a>
+            <a href="nosotros.html">Nosotros</a>
+            <a href="menu.html">Menu</a>
+            <a href="contacto.html">Contacto</a>
+        </div>
+        <div class="copyR">
+            <p>© 2022 Copyright | Federico Medina</p>
+
+        </div>
+    </footer>
+    <script src="/js/pedidoForm.js"></script>
+</body>
+
+</html>

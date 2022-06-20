@@ -1,0 +1,204 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital@1&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Nunito', sans-serif;
+    text-decoration: none;
+    list-style: none;
+}
+
+/*Header*/
+header{
+    display: flex;
+    min-height: 70px;
+    justify-content: space-between;
+    align-items: center;
+    background: #1F1F1F;
+    padding: 15px;
+}
+
+.logo img{
+    height: 50px;
+}
+
+.nav-menu a{
+    color: #fff;
+    padding-right: 20px;
+}
+
+.nav-menu a:hover{
+    color: #FFDBE3;
+    transition: 1s;
+}
+
+@media (max-width: 700px){
+    header{
+        flex-direction: column;
+    }
+    .nav-menu{
+        padding: 10px 0px;
+    }
+}
+/*Main*/
+
+main{
+    background: #1F1F1F;
+}
+.titleP{
+    text-align: center;
+    font-size: 3rem;
+    color: #fff;
+}
+
+.titleS{
+    margin: auto;
+    margin-top: 50px;
+    width: 20%;
+    background: #FFDBE3;
+    border-radius: 30px;
+    text-align: center; 
+}
+@media (max-width: 700px){
+    .titleS{
+        width: 50%;
+    }
+}
+/*Cards*/
+.mejoresPlatos {
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.card {
+    background: #E8EDFF;
+    width: 220px;
+    height: 400px;
+    margin: 10px;
+    border-radius: 15px;
+    text-align: center;
+}
+
+.cardImg {
+    height: 170px;
+    margin-bottom: 15px;
+    background-size: cover;
+    border-radius: 15px 15px 0 0;
+}
+
+.cardImg h3 p {
+    text-align: center;
+}
+
+.car1 {
+    background-image: url(/comidas/tofu.jpg);
+}
+
+.car2 {
+    background-image: url(/comidas/ramen.jpg);
+}
+
+.car3 {
+    background-image: url(/comidas/dumplings.jpg);
+}
+
+.car4 {
+    background-image: url(/comidas/katsu.jpg);
+}
+
+.car5 {
+    background-image: url(/comidas/sushi.png);
+}
+
+.car6 {
+    background-image: url(/comidas/buns.jpg);
+}
+
+.car7 {
+    background-image: url(/comidas/salsa\ .jpg);
+}
+
+.car8 {
+    background-image: url(/comidas/taiyaki.jpg);
+}
+
+.car9 {
+    background-image: url(/comidas/dumpling\ chocolate\ con\ salsa.png);
+}
+
+.car10 {
+    background-image: url(/comidas/agua.png);
+}
+
+.car11 {
+    background-image: url(/comidas/cola.png);
+}
+
+.car12 {
+    background-image: url(/comidas/beer.png);
+}
+
+
+.card a {
+    background-color: #FFDBE3;
+    color: #121214;
+    padding: 15px 20px;
+    display: block;
+    text-decoration: none;
+    margin: 20px 50px;
+    border-radius: 10px;
+}
+
+.card:hover{
+    transform: scale(1.15);
+    transition: 1s;
+}
+
+
+
+
+/*Footer*/
+footer {
+    background-color: #E8EDFF !important;
+    display: block;
+    padding: 150px;
+    height: 100px;
+    text-align: center;
+}
+
+.redesFooter a {
+    margin-top: 20px;
+    padding: 10px;
+}
+
+.navFooter {
+    margin: 15px;
+}
+
+.navFooter a {
+    text-decoration: none;
+    color: #1F1F1F;
+    font-size: 1.1rem;
+    padding: 15px;
+}
+
+@media (max-width: 700px) {
+    footer {
+        width: 100%;
+        padding: 10px;
+        height: 200px;
+    }
+
+    .redesFooter,
+    .navFooter,
+    .copyR {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+}
